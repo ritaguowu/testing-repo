@@ -22,7 +22,6 @@
     </dependencies>
     <build>
         <pluginManagement>
-
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -48,19 +47,6 @@
 
                     </configuration>
 
-                    <dependencies>
-                        <!--Disable the junit if needed-->
-                        <!--<dependency>-->
-                        <!--<groupId>org.apache.maven.surefire</groupId>-->
-                        <!--<artifactId>surefire-junit47</artifactId>-->
-                        <!--<version>${maven-surefire-plugin.version}</version>-->
-                        <!--</dependency>-->
-                        <dependency>
-                            <groupId>org.apache.maven.surefire</groupId>
-                            <artifactId>surefire-testng</artifactId>
-                            <version>${maven-surefire-plugin.version}</version>
-                        </dependency>
-                    </dependencies>
 
                 </plugin>
             </plugins>

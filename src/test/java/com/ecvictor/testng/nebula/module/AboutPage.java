@@ -64,14 +64,15 @@ public  class AboutPage extends BaseTest {
 //        if (b) {
 //            driver.switchTo().frame();
 //        }
-
+        System.out.println("before sdlkfjsdjfljsdg");
         Aboutpage.PlayButton.click();
         Thread.sleep(2000);
 
+        System.out.println("after sdkgjldjgljsdlafj");
 
         driver.switchTo().frame(Aboutpage.IFrame);
 
-        System.out.println("sfdsagfdgdsfgdsfgfg");
+
 
         String playtime = Aboutpage.VideoTime.getAttribute("innerHTML");
 

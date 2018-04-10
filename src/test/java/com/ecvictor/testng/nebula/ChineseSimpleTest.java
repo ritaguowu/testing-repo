@@ -101,7 +101,6 @@ public class ChineseSimpleTest extends BaseTest{
         ContactPage.clickYoutube(driver);
 
         clickHome(driver);
-
     }
 
 

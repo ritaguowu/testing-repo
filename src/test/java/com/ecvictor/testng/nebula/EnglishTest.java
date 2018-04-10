@@ -98,7 +98,6 @@ public class EnglishTest extends BaseTest {
         ContactPage.checkAICommunity(driver);
 
         ContactPage.clickYoutube(driver);
-
         clickHome(driver);
 
     }

@@ -39,6 +39,7 @@ public  class ContactPage extends BaseTest {
 
     }
 
+
      public static void clickExploreNBAI(WebDriver driver) throws InterruptedException {
          String parentHandle = driver.getWindowHandle();
 

@@ -101,6 +101,7 @@ public class ChineseTraditionTest extends BaseTest {
         ContactPage.clickYoutube(driver);
 
         clickHome(driver);
+
     }
 
 

@@ -54,10 +54,13 @@ public  class AboutPage extends BaseTest {
    }
 
     public static void clickVedio(WebDriver driver) throws InterruptedException {
+
         System.out.println("Start ...ksfdlkjfljsdlfjldsf");
+
+        driver.switchTo().frame(Aboutpage.IFrame);
+
+        System.out.println("after frame ...ksfdlkjfljsdlfjldsf");
         Aboutpage.StartPlayVideo.click(); // click some link that opens a new window
-//        driver.get("https://youtu.be/FbvftQ-0odY");
-//        driver.execute_script('document.getElementsByTagName("video")[0].play()');
 
         Thread.sleep(5000);
 
@@ -71,7 +74,7 @@ public  class AboutPage extends BaseTest {
 
         System.out.println("after sdkgjldjgljsdlafj");
 
-        driver.switchTo().frame(Aboutpage.IFrame);
+
 
 
 

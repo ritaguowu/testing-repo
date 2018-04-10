@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
+import static com.ecvictor.testng.nebula.module.ContactPage.clickHome;
 import static com.ecvictor.testng.nebula.module.Navigate_En.*;
 /* Created by caoc on 2/10/17.
  * Copyright (c) 2015 Service ECVictor Inc. All rights reserved.
@@ -41,6 +42,16 @@ public class EnglishTest extends BaseTest {
         HomePage.clickVideo(driver);
 
         HomePage.clickdemo(driver);
+
+        HomePage.clickGithub(driver);
+
+        HomePage.clickTwitter(driver);
+
+        HomePage.clickFacebook(driver);
+
+        HomePage.checkAICommunity(driver);
+
+        HomePage.clickYoutube(driver);
 
        // Homepage_En.clicWhitePaper(driver);
 
@@ -78,15 +89,17 @@ public class EnglishTest extends BaseTest {
 
         clickContact(driver);
 
-        ContactPage.checkAICommunity(driver);
-
-        ContactPage.clickExploreNBAI(driver);
-
         ContactPage.clickGithub(driver);
 
         ContactPage.clickTwitter(driver);
 
+        ContactPage.clickFacebook(driver);
+
+        ContactPage.checkAICommunity(driver);
+
         ContactPage.clickYoutube(driver);
+
+        clickHome(driver);
 
     }
 

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
+import static com.ecvictor.testng.nebula.module.ContactPage.clickHome;
 import static com.ecvictor.testng.nebula.module.Navigate_ChS.*;
 /* Created by caoc on 2/10/17.
  * Copyright (c) 2015 Service ECVictor Inc. All rights reserved.
@@ -32,7 +33,7 @@ public class ChineseSimpleTest extends BaseTest{
         PageFactory.initElements(driver, Advisorspage.class);
         PageFactory.initElements(driver, Contactpage.class);
 
-        //HomePageAction_ChS.clickLogin(driver);
+        clickLogin(driver);
 
         checkLogin(driver);
 
@@ -40,9 +41,20 @@ public class ChineseSimpleTest extends BaseTest{
 
         // Homepage_ChS.checkHomepage(driver);
 
+        //Homepage_ChS.clicWhitePaper(driver);
+        HomePage.clickVideo(driver);
+
         HomePage.clickdemo(driver);
 
-        //Homepage_ChS.clicWhitePaper(driver);
+        HomePage.clickGithub(driver);
+
+        HomePage.clickTwitter(driver);
+
+        HomePage.clickFacebook(driver);
+
+        HomePage.checkAICommunity(driver);
+
+        HomePage.clickYoutube(driver);
 
         clickAbout(driver);
 
@@ -75,7 +87,6 @@ public class ChineseSimpleTest extends BaseTest{
         clickInvestors(driver);
 
         clickContact(driver);
-        ContactPage.checkAICommunity(driver);
 
         ContactPage.clickExploreNBAI(driver);
 
@@ -83,7 +94,13 @@ public class ChineseSimpleTest extends BaseTest{
 
         ContactPage.clickTwitter(driver);
 
+        ContactPage.clickFacebook(driver);
+
+        ContactPage.checkAICommunity(driver);
+
         ContactPage.clickYoutube(driver);
+
+        clickHome(driver);
 
     }
 

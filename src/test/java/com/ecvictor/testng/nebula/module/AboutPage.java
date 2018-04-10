@@ -54,6 +54,7 @@ public  class AboutPage extends BaseTest {
    }
 
     public static void clickVedio(WebDriver driver) throws InterruptedException {
+        System.out.println("Start ...ksfdlkjfljsdlfjldsf");
         Aboutpage.StartPlayVideo.click(); // click some link that opens a new window
 //        driver.get("https://youtu.be/FbvftQ-0odY");
 //        driver.execute_script('document.getElementsByTagName("video")[0].play()');

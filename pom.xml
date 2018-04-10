@@ -141,12 +141,12 @@
 			<version>20140107</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>automation</groupId>
-			<artifactId>automation-testing</artifactId>
-			<version>0.0.1</version>
-			<scope>test</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>automation</groupId>-->
+			<!--<artifactId>automation-testing</artifactId>-->
+			<!--<version>0.0.1</version>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
 
 	</dependencies>
 

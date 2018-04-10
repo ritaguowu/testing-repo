@@ -68,7 +68,10 @@ public  class AboutPage extends BaseTest {
         Aboutpage.PlayButton.click();
         Thread.sleep(2000);
 
+
         driver.switchTo().frame(Aboutpage.IFrame);
+
+        System.out.println("sfdsagfdgdsfgdsfgfg");
 
         String playtime = Aboutpage.VideoTime.getAttribute("innerHTML");
 

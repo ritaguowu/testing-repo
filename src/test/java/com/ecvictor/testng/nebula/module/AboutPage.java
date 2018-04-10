@@ -90,10 +90,10 @@ public  class AboutPage extends BaseTest {
 
         try {
             System.out.println("Start ...ksfdlkjfljsdlfjldsf");
+            Thread.sleep(8000);
 
             driver.switchTo().frame(Aboutpage.IFrame);
 
-            Thread.sleep(4000);
             System.out.println("after frame ...ksfdlkjfljsdlfjldsf");
             Aboutpage.StartPlayVideo.click(); // click some link that opens a new window
 

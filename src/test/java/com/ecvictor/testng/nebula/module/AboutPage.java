@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -53,6 +55,37 @@ public  class AboutPage extends BaseTest {
          driver.switchTo().window(parentHandle); // switch back to the original window
    }
 
+    public static void clickVedio_old(WebDriver driver) throws InterruptedException {
+
+        System.out.println("Start ...ksfdlkjfljsdlfjldsf");
+
+        driver.switchTo().frame(Aboutpage.IFrame);
+
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        //play video
+        js.executeScript("document.getElementById(\"video\").play()");
+        Thread.sleep(5000);
+
+        //pause playing video
+        js.executeScript("document.getElementById(\"video\").pause()");
+
+        //check video is paused
+        System.out.println(js .executeScript("document.getElementById(\"video\").paused"));
+
+        String playtime = Aboutpage.VideoTime.getAttribute("innerHTML");
+
+        System.out.println("time:"+playtime);
+
+
+        Assert.assertNotEquals(playtime, "0.00");
+
+        driver.switchTo().defaultContent();
+
+    }
+
     public static void clickVedio(WebDriver driver) throws InterruptedException {
 
         System.out.println("Start ...ksfdlkjfljsdlfjldsf");
@@ -64,19 +97,11 @@ public  class AboutPage extends BaseTest {
 
         Thread.sleep(5000);
 
-//        Boolean b = Aboutpage.IFrame.getCssValue("video.video-stream.html5-main-video").startsWith("0");
-//        if (b) {
-//            driver.switchTo().frame();
-//        }
         System.out.println("before sdlkfjsdjfljsdg");
         Aboutpage.PlayButton.click();
         Thread.sleep(2000);
 
         System.out.println("after sdkgjldjgljsdlafj");
-
-
-
-
 
         String playtime = Aboutpage.VideoTime.getAttribute("innerHTML");
 

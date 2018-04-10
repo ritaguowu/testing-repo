@@ -13,7 +13,7 @@ public class Aboutpage {
     @FindBy(how= How.XPATH, using="//*[@id=\"section8\"]/div/div[2]/div[1]/div[2]/p[4]/a[2]")
     public static WebElement SOHUPage;
 
-    @FindBy(how= How.XPATH, using="//*[@id=\"section8\"]/div/div[2]/div[2]/div")
+    @FindBy(how= How.XPATH, using="//button[@class=\"ytp-large-play-button ytp-button\"]")
     public static WebElement StartPlayVideo;
 
     @FindBy(how= How.XPATH, using="//span[@class=\"ytp-time-current\"]")
@@ -23,7 +23,7 @@ public class Aboutpage {
     @FindBy(how= How.XPATH, using="//*[@id=\"section8\"]/div/div[2]/div[2]/div/iframe")
     public static WebElement IFrame;
 
-    @FindBy(how= How.XPATH, using="//*[@id=\"section8\"]/div/div[2]/div[2]/div/iframe")
+    @FindBy(how= How.XPATH, using="//button[@class=\"ytp-play-button ytp-button\"]")
     public static WebElement PlayButton;
 
 

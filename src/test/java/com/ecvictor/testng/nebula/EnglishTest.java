@@ -62,6 +62,7 @@ public class EnglishTest extends BaseTest {
         AboutPage.clickSAPage(driver);
 
        // AboutPage.clickVedio(driver);
+        AboutPage.testVideo(driver);
 
         //clickStrategy(driver);
 

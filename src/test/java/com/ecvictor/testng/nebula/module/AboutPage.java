@@ -121,4 +121,17 @@ public  class AboutPage extends BaseTest {
 
     }
 
+    public static void testVideo(WebDriver driver) throws InterruptedException {
+        WebElement frame=driver.findElement(By.xpath("//*[@id=\"section8\"]/div/div[2]/div[2]/div/iframe"));
+        driver.switchTo().frame(frame);
+        WebElement centerButton=driver.findElement(By.xpath("//button[@aria-label=\"Play\"]"));
+        centerButton.click();
+        Thread.sleep(3000);
+        WebElement pauseBUtton=driver.findElement(By.xpath("//button[@aria-label=\"Pause\"]"));
+        pauseBUtton.click();
+        Thread.sleep(3000);
+        WebElement time=driver.findElement(By.xpath("//div/span[@class=\"ytp-time-current\"]"));
+        System.out.println(time.getText());
+    }
+
 }

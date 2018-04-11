@@ -132,6 +132,7 @@ public  class AboutPage extends BaseTest {
         Thread.sleep(3000);
         WebElement time=driver.findElement(By.xpath("//div/span[@class=\"ytp-time-current\"]"));
         System.out.println(time.getText());
+        driver.switchTo().defaultContent();
     }
 
 }

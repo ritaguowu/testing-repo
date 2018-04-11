@@ -207,7 +207,6 @@
                         </dependency>
 						<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 					</dependencies>
-
 				</plugin>
 			</plugins>
 		</pluginManagement>

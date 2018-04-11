@@ -1,6 +1,7 @@
 package com.ecvictor.testng.nebula;
 
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,12 +21,15 @@ public class BaseTest{
             System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         else System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 
+        Dimension d = new Dimension(1382,744);
+        //Resize the current window to the given dimension
         ChromeOptions chromeOptions = new ChromeOptions();
         //chromeOptions.addArguments("--kiosk");
         //chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--start-maximized");
+        //chromeOptions.addArguments("--start-maximized");
         driver = new ChromeDriver(chromeOptions);
         baseUrl = "https://www.nebula-ai.com/";
+        driver.manage().window().setSize(d);
         driver.get(baseUrl);
         return driver;
     }
